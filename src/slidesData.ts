@@ -890,6 +890,195 @@ export const presentations: Presentation[] = [
         }
       }
     ]
+  },
+  {
+    id: 'guide1',
+    name: 'Guide: Step by Step Manuscript',
+    description: 'Best Practices from "Step by Step Guide to Writing a Scientific Manuscript"',
+    slides: [
+      {
+        id: 'g1-title',
+        type: 'title',
+        title: 'Writing a Scientific Manuscript',
+        subtitle: 'A Step-by-Step Guide & Best Practices',
+        content: {
+          author: 'Optimized Summary',
+          institution: 'Scientific Writing Best Practices'
+        }
+      },
+      {
+        id: 'g1-prep',
+        type: 'stages',
+        title: 'Phase 1: Preparation & Planning',
+        content: {
+          stages: [
+            { number: 1, title: 'Topic & Audience', items: ['Choose a novel & relevant topic', 'Identify target audience', 'Select potential journals'], color: 'blue' },
+            { number: 2, title: 'Literature Review', items: ['Read comprehensive reviews', 'Identify knowledge gaps', 'Define your contribution'], color: 'green' },
+            { number: 3, title: 'Study Design', items: ['Formulate clear hypothesis', 'Choose appropriate methods', 'Ensure ethical compliance'], color: 'purple' },
+            { number: 4, title: 'Data Collection', items: ['Execute experiments rigorously', 'Record data accurately', 'Preliminary analysis'], color: 'orange' }
+          ]
+        }
+      },
+      {
+        id: 'g1-imrad',
+        type: 'features',
+        title: 'Phase 2: The IMRAD Structure',
+        content: {
+          cards: [
+            { icon: 'FileText', title: 'Introduction', description: 'What is known? What is unknown? Why did you do this study?', color: 'blue' },
+            { icon: 'CheckCircle', title: 'Methods', description: 'Detailed protocols, study population, statistical analysis.', color: 'green' },
+            { icon: 'BookOpen', title: 'Results', description: 'Objective findings, tables, figures. No interpretation yet.', color: 'purple' },
+            { icon: 'Edit', title: 'Discussion', description: 'Interpretation, comparison with literature, limitations, conclusion.', color: 'orange' }
+          ]
+        }
+      },
+      {
+        id: 'g1-drafting',
+        type: 'advice',
+        title: 'Phase 3: Drafting Best Practices',
+        content: {
+          quoteText: 'Start writing while experiments are ongoing. Do not wait for perfection in the first draft.',
+          cards: [
+            { icon: 'Edit', title: 'Title & Abstract', description: 'Write these LAST. They are the most read parts.', color: 'red' },
+            { icon: 'BookOpen', title: 'References', description: 'Use reference management software. Cite primary sources.', color: 'blue' },
+            { icon: 'CheckCircle', title: 'Cohesion', description: 'Ensure logical flow between paragraphs. Use linking words.', color: 'green' },
+            { icon: 'FileText', title: 'Visuals', description: 'High-quality figures. Self-explanatory captions.', color: 'purple' }
+          ]
+        }
+      },
+      {
+        id: 'g1-language',
+        type: 'features',
+        title: 'Language & Style',
+        content: {
+          cards: [
+            { icon: 'CheckCircle', title: 'Clarity', description: 'Simple sentences. Avoid ambiguity.', color: 'blue' },
+            { icon: 'Edit', title: 'Conciseness', description: 'Remove redundancy (e.g., "brief in duration" -> "brief").', color: 'green' },
+            { icon: 'FileText', title: 'Objectivity', description: 'Avoid emotional language. Stick to facts.', color: 'purple' },
+            { icon: 'BookOpen', title: 'Tense', description: 'Past tense for Methods/Results. Present for established facts.', color: 'orange' }
+          ],
+          examples: [
+            {
+              title: 'Example of Improvement',
+              description: 'Bad: "It has been found that..." → Good: "We found..." (Active voice is often preferred for clarity)',
+              color: 'blue'
+            }
+          ]
+        }
+      },
+      {
+        id: 'g1-checklist',
+        type: 'timeManagement',
+        title: 'Final Checklist Before Submission',
+        content: {
+          mainText: 'Ensure all criteria are met',
+          checkItems: [
+            'Does the Title accurately reflect the content?',
+            'Is the Abstract a standalone summary?',
+            'Are the Methods reproducible?',
+            'Do the Results address the research question?',
+            'Are all Figures and Tables cited in text?',
+            'Are references formatted correctly for the journal?',
+            'Has the manuscript been proofread for grammar?',
+            'Have all authors approved the final version?'
+          ],
+          timeBlocks: [
+             { fraction: '40%', label: 'Preparation & Analysis', color: 'blue' },
+             { fraction: '30%', label: 'Drafting', color: 'yellow' },
+             { fraction: '30%', label: 'Revising & Polishing', color: 'green' }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: 'guide2',
+    name: 'Guide: Writing a Scientific Article',
+    description: 'Comprehensive Summary & Best Practices from Ecarnot et al.',
+    slides: [
+      {
+        id: 'g2-title',
+        type: 'title',
+        title: 'Writing a Scientific Article',
+        subtitle: 'A Step-by-Step Guide for Beginners',
+        content: {
+          author: 'Summarized from F. Ecarnot et al. (2015)',
+          institution: 'European Geriatric Medicine',
+          footerText: 'Best Practices & Key Takeaways'
+        }
+      },
+      {
+        id: 'g2-roadmap',
+        type: 'stages',
+        title: 'The Writing Roadmap',
+        content: {
+          stages: [
+            { number: 1, title: 'Preliminary Questions', items: ['Do I have a clear message?', 'Is the timing right?', 'Which journal is best suited?'], color: 'blue' },
+            { number: 2, title: 'Structure (IMRAD)', items: ['Introduction: Why?', 'Methods: How?', 'Results: What?', 'Discussion: So what?'], color: 'green' },
+            { number: 3, title: 'The Writing Order', items: ['Methods & Results (easiest)', 'Introduction & Discussion', 'Title & Abstract (last)'], color: 'purple' },
+            { number: 4, title: 'Review & Submit', items: ['Self-revision', 'Co-author feedback', 'Submission'], color: 'orange' }
+          ]
+        }
+      },
+      {
+        id: 'g2-methods-results',
+        type: 'features',
+        title: 'The Core: Methods & Results',
+        content: {
+          cards: [
+            { icon: 'CheckCircle', title: 'Methods', description: 'Detailed enough for reproduction. Use subheadings. Past tense. Be precise.', color: 'blue' },
+            { icon: 'BookOpen', title: 'Results', description: 'Facts only. No interpretation. Use Tables/Figures for complex data.', color: 'green' }
+          ],
+          examples: [
+            { title: 'Golden Rule', description: 'If it is in the Results, it MUST be in the Methods. If it is in the Discussion, it MUST be in the Results.', color: 'red' }
+          ]
+        }
+      },
+      {
+        id: 'g2-intro-discussion',
+        type: 'definition',
+        title: 'The Context: Intro & Discussion',
+        content: {
+          mainText: 'Connect your specific work to the broader scientific field using the <strong>Funnel</strong> concept.',
+          cards: [
+            { icon: 'FileText', title: 'Introduction (Funnel)', description: 'Wide to Narrow: Background → Problem → Unknowns → Hypothesis.', color: 'purple' },
+            { icon: 'Edit', title: 'Discussion (Inverted Funnel)', description: 'Narrow to Wide: Main Finding → Comparison → Mechanism → Implications.', color: 'orange' }
+          ]
+        }
+      },
+      {
+        id: 'g2-abstract-title',
+        type: 'advice',
+        title: 'The Hook: Title & Abstract',
+        content: {
+          quoteText: 'The Title and Abstract are often the only parts read. Make them count.',
+          cards: [
+            { icon: 'Edit', title: 'Title', description: 'Informative, concise, and specific. Avoid abbreviations and questions.', color: 'blue' },
+            { icon: 'BookOpen', title: 'Abstract', description: 'Mini-version of the paper. Strictly follow word limits. No citations.', color: 'green' }
+          ]
+        }
+      },
+      {
+        id: 'g2-best-practices',
+        type: 'timeManagement',
+        title: 'Best Practices Checklist',
+        content: {
+          mainText: 'Quality Control Before Submission',
+          checkItems: [
+            'Simplicity: Short sentences, simple words.',
+            'Clarity: One idea per paragraph.',
+            'Consistency: Use same terms throughout.',
+            'Objectivity: Avoid "dramatic" or "surprising".',
+            'Citations: Quote primary sources, not reviews.'
+          ],
+          timeBlocks: [
+            { fraction: '1st', label: 'Message', color: 'blue' },
+            { fraction: '2nd', label: 'Target', color: 'green' },
+            { fraction: '3rd', label: 'Format', color: 'red' }
+          ]
+        }
+      }
+    ]
   }
 ];
 
