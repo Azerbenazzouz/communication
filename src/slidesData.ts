@@ -1079,6 +1079,86 @@ export const presentations: Presentation[] = [
         }
       }
     ]
+  },
+  {
+    id: 'part3',
+    name: 'Part 3: Publishing Process',
+    description: 'Submission, Peer Review, and Publication Ethics',
+    slides: [
+      {
+        id: 'p3-title',
+        type: 'title',
+        title: 'The Scientific Publishing Process',
+        subtitle: 'From Manuscript to Article',
+        content: {
+          author: 'Master 2026',
+          institution: 'Scientific Communication'
+        }
+      },
+      {
+        id: 'p3-lifecycle',
+        type: 'stages',
+        title: 'The Life Cycle of a Manuscript',
+        content: {
+          stages: [
+            { number: 1, title: 'Submission', items: ['Submit via online system', 'Editor checks formatting', 'Editor checks scope'], color: 'blue' },
+            { number: 2, title: 'Peer Review', items: ['Editor assigns reviewers', 'Reviewers evaluate quality', 'Reviewers send report'], color: 'green' },
+            { number: 3, title: 'Decision', items: ['Accept', 'Minor/Major Revision', 'Reject'], color: 'purple' },
+            { number: 4, title: 'Publication', items: ['Proofreading', 'Online First', 'Assigned to Issue'], color: 'orange' }
+          ]
+        }
+      },
+      {
+        id: 'p3-review-types',
+        type: 'features',
+        title: 'Types of Peer Review',
+        content: {
+          cards: [
+            { icon: 'CheckCircle', title: 'Single-Blind', description: 'Reviewers know authors, but authors don\'t know reviewers (Most common).', color: 'blue' },
+            { icon: 'FileText', title: 'Double-Blind', description: 'Neither authors nor reviewers know each other\'s identities (Reduces bias).', color: 'green' },
+            { icon: 'BookOpen', title: 'Open Review', description: 'Identities are revealed. Reviews may be published alongside the paper.', color: 'orange' },
+            { icon: 'Edit', title: 'Post-Publication', description: 'Review happens after the paper is published online.', color: 'purple' }
+          ]
+        }
+      },
+      {
+        id: 'p3-decisions',
+        type: 'definition',
+        title: 'Understanding Editorial Decisions',
+        content: {
+          mainText: 'Receiving a "Revision" decision is a <strong>success</strong>, not a failure. It means the journal is interested.',
+          cards: [
+            { icon: 'CheckCircle', title: 'Accept', description: 'Rare on first submission. Ready to publish.', color: 'green' },
+            { icon: 'Edit', title: 'Minor Revision', description: 'Small changes needed (clarity, typos, minor references).', color: 'blue' },
+            { icon: 'FileText', title: 'Major Revision', description: 'Significant work needed. New experiments or analysis may be required.', color: 'orange' },
+            { icon: 'BookOpen', title: 'Reject', description: 'Out of scope, fatal flaws, or lack of novelty. Try another journal.', color: 'red' }
+          ]
+        }
+      },
+      {
+        id: 'p3-ethics',
+        type: 'reminder',
+        title: 'Publication Ethics',
+        content: {
+          footerText: 'Scientific misconduct can end a career.',
+          mainText: '<strong>Plagiarism</strong> (copying text/ideas), <strong>Fabrication</strong> (making up data), and <strong>Falsification</strong> (manipulating data) are serious offenses.'
+        }
+      },
+      {
+        id: 'p3-predatory',
+        type: 'advice',
+        title: 'Avoiding Predatory Journals',
+        content: {
+          quoteText: 'Think. Check. Submit. Not all journals are legitimate.',
+          cards: [
+            { icon: 'CheckCircle', title: 'Check Indexing', description: 'Is it in Web of Science, Scopus, or PubMed?', color: 'blue' },
+            { icon: 'Edit', title: 'Verify Fees', description: 'Be wary of hidden or extremely low/high guaranteed publication fees.', color: 'red' },
+            { icon: 'BookOpen', title: 'Assess Quality', description: 'Check previous papers for poor editing or lack of scientific rigor.', color: 'orange' },
+            { icon: 'FileText', title: 'Editor Board', description: 'Are the editorial board members recognized experts?', color: 'green' }
+          ]
+        }
+      }
+    ]
   }
 ];
 
